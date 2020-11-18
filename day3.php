@@ -69,9 +69,6 @@
             }
         }
     }
-    
-        // $result = array_intersect($coordonnees1,$coordonnees2);
-        // print_r($result);
 
     // je cherche le point où elle est minimale ... ok j'ai mis la charrue avant les boeufs, y a rien dans ma variable
 
