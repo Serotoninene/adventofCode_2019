@@ -17,7 +17,7 @@
         U = +y;
         D = -y;
 
-        O being the intersection point the x and y axis
+        O being the intersection point the x and y axis 
     */
 
     // CREATE A FUNCTION THAT GENERATE THE COORDONATES OF THE LINES AND PUT THEM INTO AN ARRAY
@@ -28,22 +28,27 @@
 
         for ($i = 0 ; $i <= 300; $i++){
             if ($ligne[$i][0] == "R"){
-                $x += intval(substr($ligne[$i],1));
-                $coordonnees[$i] = [$x,$y];
+                $num = intval(substr($ligne[$i],1));
+                    $x += $num;
+                    $coordonnees[] = [$x,$y];
             }
             elseif($ligne[$i][0] == "L"){
-                $x -= intval(substr($ligne[$i],1));
-                $coordonnees[$i] = [$x,$y];
-
+                $num = intval(substr($ligne[$i],1));
+                    $x -= $num;
+                    $coordonnees[] = [$x,$y];
+                
             }
             elseif($ligne[$i][0] == "U"){
-                $y += intval(substr($ligne[$i],1));
-                $coordonnees[$i] = [$x,$y];
-
+                $num = intval(substr($ligne[$i],1));
+                    $y += $num;
+                    $coordonnees[] = [$x,$y];
+                
             }
             elseif($ligne[$i][0] == "D"){ 
-                $y -= intval(substr($ligne[$i],1));
-                $coordonnees[$i] = [$x,$y];
+                $num = intval(substr($ligne[$i],1));
+                    $y -= $num;
+                    $coordonnees[] = [$x,$y];
+                
             }   
         }
         return $coordonnees;
@@ -60,15 +65,22 @@
     // $intersections [] = array_intersect($coordonnees1,$coordonnees2);
     // print_r($intersections);
 
-    // SECOND ATTEMPT : GENERATING A LOOP THAT COMPARES EACH COORDINATES VERY MANUALLY -- NOTHING COMES OUT OF IT ..
-    for ($i = 0; $i <= 300; $i++){
-        for ($j = 0; $j <= 300; $j++){
-            if ($coordonnees1[$i][0] == $coordonnees2[$j][0] || $coordonnees1[$i][1] == $coordonnees2[$j][1]){
-                echo $i." and ".$j;
-                print_r($coordonnees1[$i]);
-            }
-        }
+    // JE COUPE MES TABLEAUX DE COORDONNÉES EN AUTANT DE TABLEAUX QU'ILS ONT DE SECTIONS
+    function section($val){
+        return  array_chunk($val,2);
     }
+
+    $section1 = section($coordonnees1);
+    $section2 = section($coordonnees2);
+
+    // SECOND ATTEMPT : GENERATING A LOOP THAT COMPARES EACH COORDINATES VERY MANUALLY -- NOTHING COMES OUT OF IT ..
+    // for ($i = 0; $i <= 300; $i++){
+    //         if ($coordonnees1[$i][0] == $coordonnees2[$i][0] || $coordonnees1[$i][1] == $coordonnees2[$i][1]){
+    //             echo $i." and ".$j;
+    //             print_r($coordonnees1[$i]);
+            
+    //     }
+    // }
 
     // je cherche le point où elle est minimale ... ok j'ai mis la charrue avant les boeufs, y a rien dans ma variable
 
