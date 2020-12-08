@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aefe2580-b9a3-443e-b5c5-3484e90f6492" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/2020/day3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2020/day4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day3.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +61,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606843788217</updated>
-      <workItem from="1606843789785" duration="1441000" />
+      <workItem from="1606843789785" duration="2292000" />
+      <workItem from="1606901430015" duration="1884000" />
+      <workItem from="1606943073294" duration="9182000" />
+      <workItem from="1607071347034" duration="4983000" />
+      <workItem from="1607173909017" duration="5415000" />
+      <workItem from="1607422843345" duration="11176000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="478" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606843864975">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="478" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1606843864975" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1606844892005">
+    <state x="808" y="136" width="628" height="640" key="find.popup" timestamp="1607176464094">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606844892005" />
+    <state x="808" y="136" width="628" height="640" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1607176464094" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1607426728555">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1607426728554" />
   </component>
 </project>
