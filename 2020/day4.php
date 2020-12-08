@@ -14,7 +14,6 @@
             $count += 1;
         }
     }
-    //    echo $count;
 
     //PARTIE 2
     // Les champs doivent maintenant être valides et répondre à certains critères
@@ -58,26 +57,17 @@
         return $countTri;
     }
 
-    echo tri($data);
-    echo "\n";
-
     // Je reprend ma première boucle de tri
     $count = 0;
 
     foreach($data as $dat){
             if (strstr($dat, "byr") && strstr($dat, "iyr") && strstr($dat, "eyr") && strstr($dat, "hgt") && strstr($dat, "hcl") && strstr($dat, "ecl" ) && strstr($dat, "pid") && strstr($dat, "cid")){
-                $count += tri($dat);
+                $count += 1;
             }elseif (strstr($dat, "byr") && strstr($dat, "iyr") && strstr($dat, "eyr") && strstr($dat, "hgt") &&    strstr($dat, "hcl") && strstr($dat, "ecl" ) && strstr($dat, "pid")){
-                $count += tri($dat);
+                $count += 1;
             }
     }
 
     echo $count;
-
-
-
-
-
-
 
 ?>
