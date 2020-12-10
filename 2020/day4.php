@@ -49,7 +49,7 @@
                 (substr($val["hgt"], -2) === "in" && $val["hgt"] >= 59 && $val["hgt"] <= 76)) &&
                 strlen($val['hcl']) === 7 && preg_match("/^#([a-fA-F0-9]{6})$/", $val["hcl"]) &&
                 strlen($val["ecl"]) === 3 && preg_match(("/(amb)|(blu)|(brn)|(gry)|(grn)|(hzl)|(oth)/"), $val["ecl"]) &&
-                strlen($val["pid"]) === 9 && substr($val["pid"], 0, 1) == 0
+                strlen($val["pid"]) === 9
             ){
                 $countTri += 1;
             }
@@ -62,9 +62,9 @@
 
     foreach($data as $dat){
             if (strstr($dat, "byr") && strstr($dat, "iyr") && strstr($dat, "eyr") && strstr($dat, "hgt") && strstr($dat, "hcl") && strstr($dat, "ecl" ) && strstr($dat, "pid") && strstr($dat, "cid")){
-                $count += 1;
+                $count += tri($dat);
             }elseif (strstr($dat, "byr") && strstr($dat, "iyr") && strstr($dat, "eyr") && strstr($dat, "hgt") &&    strstr($dat, "hcl") && strstr($dat, "ecl" ) && strstr($dat, "pid")){
-                $count += 1;
+                $count += tri($dat);
             }
     }
 
